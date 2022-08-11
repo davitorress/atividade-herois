@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Heróis</title>
+</head>
+<body>
+    <script>
+        const universos = {
+            marvel: 'marvel',
+            dc: 'dc',
+        };
+        let universo = prompt("Escolha o universo (Marvel e DC)").toLowerCase();
+        
+        const marvelHerois = ['homem de ferro', 'doutor estranho', 'feiticeira escarlate', 'thor', 'groot'];
+        const dcHerois = ['superman', 'batman', 'aquaman', 'mulher maravilha', 'flash'];
+
+        if (universo == universos.marvel) {
+            document.write("<h1>Universo escolhido: Marvel</h1>");
+        	let heroi = prompt("Escolha o herói (Homem de Ferro, Doutor Estranho, Feiticeira Escarlate, Thor e Groot)").toLowerCase();
+
+            switch (heroi) {
+                case marvelHerois[0]:
+                    document.write("<h3>Herói escolhido: Homem de Ferro</h3>");
+                    break;
+                case marvelHerois[1]:
+                    document.write("<h3>Herói escolhido: Doutor Estranho</h3>");
+                    break;
+                case marvelHerois[2]:
+                    document.write("<h3>Herói escolhido: Feiticeira Escarlate</h3>");
+                    break;
+                case marvelHerois[3]:
+                    document.write("<h3>Herói escolhido: Thor</h3>");
+                    break;
+                case marvelHerois[4]:
+                    document.write("<h3>Herói escolhido: Groot</h3>");
+                    break;
+                default:
+                    document.write("<h3>Herói inválido</h3>");
+                    break;
+            }
+        } else if (universo == universos.dc) {
+            document.write("<h1>Universo escolhido: DC</h1>");
+			let heroi = prompt("Escolha o herói (Superman, Batman, Aquaman, Mulher Maravilha, Flash)").toLowerCase();
+
+            switch (heroi) {
+                case dcHerois[0]:
+                    document.write("<h3>Herói escolhido: Superman</h3>");
+                    break;
+                case dcHerois[1]:
+                    document.write("<h3>Herói escolhido: Batman</h3>");
+                    break;
+                case dcHerois[2]:
+                    document.write("<h3>Herói escolhido: Aquaman</h3>");
+                    break;
+                case dcHerois[3]:
+                    document.write("<h3>Herói escolhido: Mulher Maravilha</h3>");
+                    break;
+                case dcHerois[4]:
+                    document.write("<h3>Herói escolhido: Flash</h3>");
+                    break;
+                default:
+                    document.write("<h3>Herói inválido</h3>");
+                    break;
+            }
+        } else {
+            document.write("<h1>Universo inválido</h1>");
+        }
+    </script>
+</body>
+</html>
