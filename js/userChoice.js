@@ -101,6 +101,9 @@ function userChoice() {
 
 				content.appendChild(p);
 			}
+		} else {
+			heroName.innerHTML = "Herói Inválido";
+			heroImg.hasChildNodes() ? heroImg.removeChild(heroImg.firstChild) : console.log(heroImg.hasChildNodes());
 		}
 	} else if (setUniverse == getDc) {
 		universeLogo.src = universeDc.src;
@@ -121,6 +124,9 @@ function userChoice() {
 
 				content.appendChild(p);
 			}
+		} else {
+			heroName.innerHTML = "Herói Inválido";
+			heroImg.hasChildNodes() ? heroImg.removeChild(heroImg.firstChild) : console.log(heroImg.hasChildNodes());
 		}
 	} else {
 		alert("Universo Inválido!");
